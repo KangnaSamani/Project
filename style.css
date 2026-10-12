@@ -2,6 +2,8 @@
     margin: 0;
     font-family: Arial;
     border: border-box;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .navbar{
@@ -16,17 +18,34 @@
 .nav-logo{
     height: 50px;
     width: 100px;
+    display: flex;
+    
+    align-items: center;
 }
 
 .logo{
-    background-image: url("amazon_logo.png");
-    background-size: cover;
-    height: 50px;
-    width: 100%;
+
+    background-size: contain;
+    background-position: center;
+    height: 75px;
+    width: 130%;
+    margin-left: -25px;
+}
+
+.logo-in{
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-left: -10px;
+    display: inline-block;
+    align-self: flex-end;
+    margin-bottom: 9px;
 }
 
 .border{
     border: 1.5px solid transparent;
+    margin: 5px 0 6px 0;
+    padding: 8px 5px;
 }
 
 .border:hover{
@@ -98,6 +117,11 @@
     width: 25px; 
 }
 
+.language-container span{
+    font-size: 15px;
+    margin-left: 4px;
+}
+
 span{
     font-size: 0.7rem;
 }
@@ -127,7 +151,6 @@ span{
 
 .panel-ops p{
     display: inline;
-    margin-left: 10px;
 }
 
 .panel-ops{
@@ -151,56 +174,7 @@ body{
     padding: 24px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-}
-
-.deals-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.deals-title h2{
-    font-size: 1.3rem;
-    font-weight: 700;
-    line-height: 1.3;
-    max-width: 85%;
-    margin-bottom: 24px;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    height: 140;
-    width: 140;
-}
-
-.grid-item{
-    background-color: #ffffff;
-    border-radius: 16px;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-    overflow: hidden;
-    transition: transform 0.2s ease;
-    cursor: pointer;
-    
-}
-
-.grid-item:hover{
-    transform: scale(1.02);
-}
-
-.grid-item img{
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    margin-inline-start: 10px;
 }
 
 .banner-container{
@@ -208,11 +182,10 @@ body{
     
     width: 320px;
     height: 450px;
-    padding: 24px;
+    padding: 20px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    margin-left: 0.5px;
+    margin-inline-start: 10px;
 }
 
 .banner-header{
@@ -227,7 +200,7 @@ body{
 .banner-header h2{
     font-size: 1.3rem;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.1;
     max-width: 85%;
 }
 
@@ -290,20 +263,7 @@ body{
     padding: 24px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    margin-left: 0.5px;
-}
-
-.banner-container3{
-    background: linear-gradient(135deg, #ff8c00, #ff5500);
-    
-    width: 320px;
-    height: 450px;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    margin-left: 0.5px;
+    margin-inline-start: 10px;
 }
 
 .banner-header2{
@@ -322,55 +282,9 @@ body{
     max-width: 85%;
 }
 
-.banner-container4{
-    background: linear-gradient(135deg, #ff8c00, #ff5500);
-    
-    width: 320px;
-    height: 450px;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-}
-
 .card-product-container{
     display: flex;
-}
-
-.banner-container5{
-    background: linear-gradient(135deg, #ff8c00, #ff5500);
-    
-    width: 320px;
-    height: 450px;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    margin-left: 0.5px;
-}
-
-.banner-container6{
-    background: linear-gradient(135deg, #ff8c00, #ff5500);
-    
-    width: 320px;
-    height: 450px;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    margin-left: 0.5px;
-}
-
-.banner-container7{
-    background: linear-gradient(135deg, #ff8c00, #ff5500);
-    
-    width: 320px;
-    height: 450px;
-    padding: 24px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    margin-left: 0.5px;
 }
 
 .main{
@@ -384,7 +298,7 @@ body{
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin-inline-start: 10px;
 }
 
 .header-card-banner img{
@@ -394,6 +308,8 @@ body{
     display: block;
     
 }
+
+
 
 .text-content{
     position: absolute;
@@ -479,11 +395,11 @@ ul a{
     align-items: center;
 }
 
-.logo{
+.logo2{
     background-image: url("amazon_logo.png");
     background-size: cover;
     height: 50px;
-    width: 100%;
+    width: 100px;
 }
 
 .foot-panel4{
@@ -498,14 +414,21 @@ ul a{
     flex-wrap: nowrap;
     justify-content:flex-start;
     padding-left: 120px;
+    line-height: 115%;
 }
 
 .foot-panel4 a{
     font-size: 12px;
     color: #767676;
-    line-height: 110%;
+    line-height: 50%;
     display: block;
     margin-bottom: 1px;
+}
+
+.foot-panel4 h5{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 50%;
 }
 
 .foot-panel5{
@@ -514,6 +437,7 @@ ul a{
     height: 80px;
     font-size: 0.7rem;
     text-align: center;
+    font-size: 12px;
 }
 
 .pages{
