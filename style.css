@@ -29,6 +29,7 @@
     font-size: 14px;
     background-size: 350px auto;
     margin-left: 1px;
+    max-height: 40px;
 }
 
 .logo2{
@@ -52,6 +53,7 @@
     height: 14px;
     pointer-events: none;
     margin-left: -20px;
+    margin-right: 3px;
 }
 
 .border{
@@ -69,6 +71,7 @@
     color: #cccccc;
     font-size: 12px;
     margin-left: 2px;
+    margin-bottom: -5px;
 }
 
 .add-second{
@@ -130,14 +133,15 @@
     display: flex;
     font-size: 0.85rem;
     font-weight: 700;
+    margin-top: 20px;
 }
 
 .language-container img{
-    width: 25px; 
+    width: 20px; 
 }
 
 .language-container span{
-    font-size: 15px;
+    font-size: 12px;
     margin-left: 4px;
 }
 
