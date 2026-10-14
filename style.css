@@ -38,6 +38,7 @@
     width: 76px;
     height: 27px;
     margin: 0 auto;
+    margin-right: 40px;
 }
 
 .logo-in{
@@ -421,12 +422,72 @@ ul a{
 
 .foot-panel3{
     background-color: #222f3d;
-    color: white;
     border-top: 0.1px solid rgba(255, 255, 255, 0.3);
     height: 70px;
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    gap: 12px;
     align-items: center;
+    flex-direction: row;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.boxes{
+    display: flex;
+
+}
+
+.setting-box{
+    background-color: transparent;
+    display: inline-block !important;
+    border: 1px solid #848688;
+    border-radius: 3px;
+    padding: 6px 18px 6px 8px;
+    font-size: 13px;
+    margin-right: 8px;
+    align-items: center;
+    display: flex;
+    transition: border-color 0.15s;
+    cursor: pointer;
+}
+
+.setting-box:hover{
+    border-color: #ffffff;
+}
+
+.lang-select{
+    background: transparent;
+    border: none;
+    color: #cccccc;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    padding-right: 12px;
+}
+
+.setting-box:hover .lang-select{
+    color: #ffffff;
+}
+
+.setting-icon{
+    font-size: 14px;
+    color: #a2a6ac;
+    align-items: center;
+}
+
+.country{
+    color: #cccccc;
+    font-size: 13px;
+    font-weight: 500;
+}
+.setting-box img{
+    width: 25px;
+}
+
+.flag-icon{
+    filter: saturate(1.1);
 }
 
 .foot-panel4{
@@ -474,3 +535,4 @@ ul a{
 .copyright{
     padding-top: 5px;
 }
+
